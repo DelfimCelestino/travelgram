@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import { travelers } from "@/app/mockData";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PostContent from "./postContent";
 import Image from "next/image";
@@ -27,7 +26,6 @@ export default async function PostPage({ params }: { params: Props }) {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <div className="flex flex-col md:flex-row mx-auto max-w-7xl px-4 py-8">
         <div className="flex-1">
           <Image
